@@ -1,0 +1,24 @@
+﻿<Window x:Class="DemExAutoservis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemExAutoservis"
+        mc:Ignorable="d"
+        Title="ООО Автосервис" Height="600" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Frame x:Name="myFrame" NavigationUIVisibility="Hidden" ContentRendered="myFrame_ContentRendered" Grid.ColumnSpan="3" Grid.Row="1"></Frame>
+        <TextBlock Text="ООО Автосервис" FontSize="35" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <Button x:Name="BtnBack" Content="Вернуться" Click="BtnBack_Click" Grid.Column="1" Grid.Row="3" Background="Beige" FontSize="15" Height="30" Width="150"></Button>
+    </Grid>
+</Window>
